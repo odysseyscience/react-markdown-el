@@ -26,4 +26,7 @@ Simple usage just takes in markdown as a `text` property:
 
 This will render a `<div>` with `class="markdown"` by default.  You can change the tag, or add your own properties very easily:
 
-    <MarkdownEl text={text} el="a" href="http://example.com" className="custom-markdown-link"/>
+    <MarkdownEl el="a"
+                href="http://example.com"
+                className="custom-markdown-link"
+                text={text} />
