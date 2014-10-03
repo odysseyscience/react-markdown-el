@@ -11,7 +11,7 @@
   },
   "peerDependencies": {
     "react": "*"
-  }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/odysseyscience/react-markdown-el.git"
