@@ -2,7 +2,7 @@
 var React = require('react'),
     markdown = require('markdown');
 
-var MarkdownEl = React.createClass({
+var Markdown = React.createClass({
 
     propTypes: {
         text: React.PropTypes.string,
@@ -25,4 +25,4 @@ var MarkdownEl = React.createClass({
 
 });
 
-module.exports = MarkdownEl;
+module.exports = Markdown;

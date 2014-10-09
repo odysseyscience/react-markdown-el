@@ -1,1 +1,1 @@
-module.exports = require('./ReactMarkdownEl');
+module.exports = require('./ReactMarkdown');
