@@ -1,6 +1,7 @@
 
 var React = require('react'),
-    markdown = require('markdown');
+    markdown = require('markdown'),
+    objectAssign = require('object-assign');
 
 var Markdown = React.createClass({
 
@@ -17,10 +18,11 @@ var Markdown = React.createClass({
 
     render: function() {
         var El = React.DOM[this.props.el];
-        return this.transferPropsTo(El({
+        var props = objectAssign({}, this.props, {
             className: 'markdown',
             dangerouslySetInnerHTML: { __html: markdown.parse(this.props.text) }
-        }));
+        });
+        return El(props);
     }
 
 });
