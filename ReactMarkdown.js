@@ -12,7 +12,8 @@ var Markdown = React.createClass({
 
     getDefaultProps: function() {
         return {
-            el: 'div'
+            el: 'div',
+            text: ''
         };
     },
 
